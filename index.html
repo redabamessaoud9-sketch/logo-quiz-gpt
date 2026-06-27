@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LogoMaster</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- APP -->
+<!-- ========================= -->
+
+<div class="app">
+
+    <!-- ========================= -->
+    <!-- HOME -->
+    <!-- ========================= -->
+
+    <section id="home-screen" class="screen active">
+
+        <header class="top-header">
+
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i>
+                LogoMaster
+            </div>
+
+            <div class="header-icons">
+
+                <button class="icon-btn">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </button>
+
+                <button class="icon-btn">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+
+                <button class="profile-btn">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="welcome-card">
+
+                <img
+                src="assets/logo.png"
+                class="main-logo"
+                alt="LogoMaster">
+
+                <h1>LogoMaster</h1>
+
+                <p>
+                    Testez vos connaissances sur les marques
+                    les plus célèbres du monde !
+                </p>
+
+            </div>
+
+            <div class="xp-card">
+
+                <span class="small-title">
+                    NIVEAU ACTUEL
+                </span>
+
+                <h2>24</h2>
+
+                <p>1450 / 2000 XP</p>
+
+                <div class="progress">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+            </div>
+
+            <button
+            id="play-btn"
+            class="play-button">
+
+                <i class="fa-solid fa-play"></i>
+
+                Jouer
+
+            </button>
+
+            <div class="menu-grid">
+
+                <button class="menu-card">
+
+                    <i class="fa-solid fa-folder"></i>
+
+                    <span>Catégories</span>
+
+                </button>
+
+                <button class="menu-card">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <span>Classement</span>
+
+                </button>
+
+                <button class="menu-card">
+
+                    <i class="fa-solid fa-store"></i>
+
+                    <span>Boutique</span>
+
+                </button>
+
+                <button class="menu-card">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Paramètres</span>
+
+                </button>
+
+            </div>
+
+            <div class="streak-card">
+
+                <div>
+
+                    🔥 Série de 5 jours !
+
+                </div>
+
+                <p>
+
+                    Continuez comme ça pour gagner
+                    50 XP demain.
+
+                </p>
+
+            </div>
+
+        </main>
+
+        <nav class="bottom-nav">
+
+            <button class="nav-item active">
+
+                <i class="fa-solid fa-play"></i>
+
+                <span>Play</span>
+
+            </button>
+
+            <button class="nav-item">
+
+                <i class="fa-solid fa-store"></i>
+
+                <span>Shop</span>
+
+            </button>
+
+            <button class="nav-item">
+
+                <i class="fa-solid fa-ranking-star"></i>
+
+                <span>Rank</span>
+
+            </button>
+
+            <button class="nav-item">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </button>
+
+        </nav>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- GAME -->
+    <!-- ========================= -->
+
+    <section
+    id="game-screen"
+    class="screen">
+
+        <header class="game-header">
+
+            <div class="logo">
+                LogoMaster
+            </div>
+
+            <div class="game-info">
+
+                <span class="coins">
+
+                    💎 2450
+
+                </span>
+
+                <span class="lives">
+
+                    ❤️❤️🤍
+
+                </span>
+
+                <button class="icon-btn">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <div class="level-bar">
+
+            <div class="level-top">
+
+                <span>
+
+                    LEVEL 14 / 50
+
+                </span>
+
+                <span>
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    00:32
+
+                </span>
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+        </div>
+
+        <div class="logo-card">
+
+            <img
+            id="logo-image"
+            src=""
+            alt="Logo">
+
+        </div>
+
+        <div
+        id="answers-container"
+        class="answers-grid">
+
+        </div>
+
+        <div class="hint-bar">
+
+            <button>
+
+                <i class="fa-solid fa-divide"></i>
+
+                50 / 50
+
+            </button>
+
+            <button>
+
+                <i class="fa-solid fa-eye"></i>
+
+                Reveal
+
+            </button>
+
+            <button>
+
+                <i class="fa-solid fa-forward-step"></i>
+
+                Skip
+
+            </button>
+
+        </div>
+
+        <nav class="bottom-nav">
+
+            <button class="nav-item active">
+
+                <i class="fa-solid fa-play"></i>
+
+                <span>Play</span>
+
+            </button>
+
+            <button class="nav-item">
+
+                <i class="fa-solid fa-store"></i>
+
+                <span>Shop</span>
+
+            </button>
+
+            <button class="nav-item">
+
+                <i class="fa-solid fa-ranking-star"></i>
+
+                <span>Rank</span>
+
+            </button>
+
+            <button class="nav-item">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </button>
+
+        </nav>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
